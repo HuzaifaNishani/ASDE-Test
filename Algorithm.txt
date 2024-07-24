@@ -1,0 +1,22 @@
+From Problem Statement :
+
+Abhimanyu starts with power p.
+There are 11 circles, each guarded by an enemy with power ki where i is 1 to 11.
+Abhimanyu can skip fighting a times.
+Abhimanyu can recharge with power b times.
+If Abhimanyu enters a circle with less power than the enemy, he loses.
+K3 and k7 having special case to regenerate their half power.
+
+
+Algorithm : 
+
+
+> Loop through each of the 11 circles.
+> For each circle: 
+	If Abhimanyu  the fight and decreament the skip count.
+	If not skipping:
+		Check if Abhimanyu's current power is less than the enemy power. If yes, he loses.
+		If k3 or k7 they can attack from behind , if abhimanyu is on k4 or k8 repectively.
+		if abhimanyu defeat the enenmy , decrease the abhimanyus power .
+> Recharge abhimanyus power .
+> check if he can pass all the circles without loosing .
